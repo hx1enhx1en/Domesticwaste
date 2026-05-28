@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Waste</title>
+     <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="reduce.html">Reduce</a>
+            <a href="reuse.html">Reuse</a>
+            <a href="recycle.html">Recycle</a>
+            <a href="causes.html">Causes</a>
+            <a href="consequences.html">Consequences</a>
+            <a href="solutions.html">Solutions</a>
+
+            <div class="drop">
+                <a href="#">3Rs ▼</a>
+                <ul class="dropdown">
+                    <li><a href="reduce.html">Reduce</a></li>
+                    <li><a href="reuse.html">Reuse</a></li>
+                    <li><a href="recycle.html">Recycle</a></li>
+                </ul>
+            </div>
+        </nav>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: linear-gradient(to right, rgb(14, 158, 194), rgb(136, 205, 226), rgb(196, 231, 243));
+            text-align: center;
+            color: rgb(234, 245, 255);
+            padding: 15px;
+            align-items: top center;
+        }
+        header h1{
+            font-size: 60px;
+        }
+        header p{
+            font-size: 22px;
+        }
+        nav{
+            padding: 15px 21px;
+        }
+        .link{
+            text-align: center;
+            background: rgb(154, 198, 223);
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 6px 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+        }
+ 
+        nav a:hover{
+            animation: ease-in-out 0.6s hoverEffect 1 alternate infinite;
+            background-color: rgb(57, 124, 145);
+            border-radius: 8px;
+        }
+        .drop{
+            display: inline-block;
+            position: relative;
+        }
+ 
+        .dropdown{
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            background-color: rgb(62, 151, 202);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 0;
+            list-style: none;
+            border-radius: 15px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        }
+ 
+        .drop:hover .dropdown{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+ 
+        .dropdown li{
+            display: block;
+        }
+ 
+        .dropdown li a{
+            display: block;
+            padding: 10px 12px;
+        }
+        #about{
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(236, 244, 248);
+            border-radius: 12px;
+            margin: 30px 400px;
+            color: rgb(18, 72, 109);
+        }
+        #people{
+            text-align: center;
+            padding: 50px 20px;
+        }
+        #people h2{
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        .members{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .member-card{
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .member-card:hover{
+            transform: translateY(-10px);
+        }
+        .member-card img{
+            width: 120px;
+            height: 120px;
+            border-radius: 10%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .member-card h3{
+            margin-bottom: 5px;
+        }
+        .member-card p{
+            color: gray;
+        }
+        #how ul{
+            padding-left: 25px;
+        }
+        #how li{
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABOUT US</h1>
+        <p>SIMPLE ACTIONS FOR A SUSTAINABLE FUTURE</p>
+    </header>
+    <section class="link">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <div class="drop">
+                <a href="#">3Rs ▼</a>
+                <ul class="dropdown">
+                    <li><a href="reduce.html">Reduce</a></li>
+                    <li><a href="reuse.html">Reuse</a></li>
+                    <li><a href="recycle.html">Recycle</a></li>
+                </ul>
+            </div>
+            <a href="cause.html">Cause</a>
+            <a href="consequences.html">Consequences</a>
+            <a href="solution.html">Solution</a>
+        </nav>
+    </section>
+    <section id="people">
+        <h2>Our Members</h2>
+        <div class="members">
+            <div class="member-card">
+                <img src="images/Nova.jpg" alt="Myat Thain Mwae Zaw">
+                <h3>Myat Thain Mwae Zaw</h3>
+            </div>
+            <div class="member-card">
+                <img src="images/Helen.jpg" alt="Ei Kyal Sin Min">
+                <h3>Ei Kyal Sin Min</h3>
+            </div>
+            <div class="member-card">
+                <img src="images/Tayza.jpg" alt="Myo Tayza Zaw">
+                <h3>Myo Tayza Zaw</h3>
+            </div>
+            <div class="member-card">
+                <img src="images/Kane.jpg" alt="Hein Thu Htet">
+                <h3>Hein Thu Htet</h3>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="about">
+        <h2>Hello we are from EDUSN Thingangyun Campus Year 7 Group-3</h2>
+        <ul>
+            <li>We created this website to raise awareness about domestic waste
+            and how it affects our environment and daily lives.</li>
+            <li>Domestic waste includes plastic bottles, food waste, paper, and
+            other rubbish that people throw away every day. If waste is not
+            managed properly, it can cause pollution, harm animals, and damage
+            the environment.</li>
+            <li>Through this website, we hope people can learn the causes,
+            consequences, and solutions of domestic waste and help keep
+            our community clean and sustainable.</li>
+        </ul>
+    </section>
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2026 Domestic Waste | Project By Group 3</p>
+        </div>
+    </footer>
+</html>

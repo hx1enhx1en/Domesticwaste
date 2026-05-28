@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Waste</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: linear-gradient(to right, rgb(14, 158, 194), rgb(136, 205, 226), rgb(196, 231, 243));
+            text-align: center;
+            color: rgb(234, 245, 255);
+            padding: 15px;
+            align-items: top center;
+        }
+        header h1{
+            font-size: 60px;
+        }
+        header p{
+            font-size: 22px;
+        }
+        nav{
+            padding: 15px 21px;
+        }
+        .link{
+            text-align: center;
+            background: rgb(154, 198, 223);
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 6px 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+        }
+ 
+        nav a:hover{
+            animation: ease-in-out 0.6s hoverEffect 1 alternate infinite;
+            background-color: rgb(57, 124, 145);
+            border-radius: 8px;
+        }
+        .drop{
+            display: inline-block;
+            position: relative;
+        }
+ 
+        .dropdown{
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            background-color: rgb(62, 151, 202);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 0;
+            list-style: none;
+            border-radius: 15px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        }
+ 
+        .drop:hover .dropdown{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+ 
+        .dropdown li{
+            display: block;
+        }
+ 
+        .dropdown li a{
+            display: block;
+            padding: 10px 12px;
+        }
+        #how{
+            padding: 20px;
+            background-color: rgb(236, 244, 248);
+            border-radius: 12px;
+            margin: 30px;
+            margin-left: auto;
+            margin-right: 20px;
+            margin-top: 30px;
+            width: 100%;
+            color: rgb(89, 119, 139);
+            box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+        }
+        #how ul{
+            padding-left: 25px;
+        }
+ 
+        #how li{
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .sidepic{
+            position: absolute;
+            left: 50px;
+            top: 370px;
+            width: 700px;
+            border-radius: 12px;
+            box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
+        }
+        .sidepic :hover{
+            animation: ease-in-out 0.6s hoverEffect 1 alternate infinite;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CAUSE</h1>
+        <p>SIMPLE ACTIONS FOR A SUSTAINABLE FUTURE</p>
+    </header>
+    <section class="link">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <div class="drop">
+                <a href="#">3Rs ▼</a>
+                <ul class="dropdown">
+                    <li><a href="reduce.html">Reduce</a></li>
+                    <li><a href="reuse.html">Reuse</a></li>
+                    <li><a href="recycle.html">Recycle</a></li>
+                </ul>
+            </div>
+            <a href="cause.html">Cause</a>
+            <a href="consequences.html">Consequences</a>
+            <a href="solution.html">Solution</a>
+        </nav>
+    <section id="main">
+        <h3>What is the main cause of domestic waste?</h3>
+       <section id="home">
+          <ul>
+             <li>
+      Packaging
+        </li>
+               <li>
+        Lack of awareness
+        </li>
+             <li>
+          Over-consumption
+        </li>
+        <li>
+          Improper waste disposal
+        </li>
+
+        <li>
+            Lack of recycling
+        </li>
+
+        <li>Planned obsolescence 
+        </li>
+    </ul>
+    </section>
+    <img src="images/Causes.png" class="sidepic">
+</body>
+</html>
